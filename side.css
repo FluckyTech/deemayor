@@ -1,0 +1,173 @@
+body{
+    font-family: sans-serif;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   background: var(--bg-black-100);
+    overflow-x: hidden;
+    transition: 0.5s;
+   padding-top: 60px;
+   text-align: center;
+
+}
+.openbtn{
+    position: fixed;
+    top: 20px;
+    left: 16px;
+    border: none;
+    height: auto;
+    width: 50px;
+    padding: 10px;
+}
+.openbtn div{
+    height: 5px;
+    width: 40px;
+    margin: 5px ;
+    background-color:var(--skin-color);
+}
+.sidenav li  a {
+    padding: 8px 8px 8px 32px;
+     text-decoration: none;
+    font-size: 600;
+    border-bottom: 1px solid var(--bg-black-50) ;
+     font-size: 25px;
+     color:var(--text-black-900);
+     display: block;
+     transition: 0.3s;
+}
+.closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px   !important;
+    transform: rotate(45deg);
+    
+}
+.sidenav  .nav  {
+    margin-top: 50px;
+}
+.sidenav  li a
+{
+   margin-bottom: 20px;
+   display: block;
+   transition: 0.5s;
+}
+.sidenav  li a:hover
+{
+    border-radius: 4px;
+    background-color: var(--skin-color); 
+}
+.sidenav .logo
+{
+  position: absolute;
+  top: 50px;
+  font-size: 30px;
+  left: 30px;
+  text-transform: none;
+ text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidenav .logo a 
+{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding:15px 20px;
+    font-size:30px; 
+    letter-spacing:0.9px;
+    position: relative;
+}
+
+.sidenav .logo a span{
+  font-family: 'Cliker script' , cursive;
+ font-size:30px ;
+ line-height: 14px;
+ color: var(--skin-color);
+
+}
+.sidenav .logo a::before 
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+     left: 0;
+}
+.sidenav .logo a::after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+     right: 0;
+}
+@media (max-width:620px)
+ {
+    .sidenav .logo a::after,
+    .sidenav .logo a::before
+    {
+       display: none;
+       
+    }
+ }
+@media (max-width:563px)
+ {
+    .sidenav .logo
+    {
+        left: 1px;
+        letter-spacing: 0px;
+    }
+    .sidenav .nav 
+    {
+        margin-top:20px ;
+    }
+    .sidenav .nav 
+    {
+     font-size: 20px;
+
+    }
+
+ }
+ @media (max-width:539px)
+ {
+  
+    .sidenav .logo a::before
+    {
+       display: none;
+    }
+   .sidenav .logo a 
+   {
+       font-size: 18px;
+       padding-left: 40px;
+   }
+ }
+ @media (max-width:535px)
+ {
+    .sidenav .logo a 
+    {
+        font-size: 22px;
+        padding-left: 30px;
+        margin-bottom: 30px;
+    }
+ }
+ @media (max-width:396px)
+ {  
+    .sidenav .logo a 
+    {
+        font-size: 12px;
+        padding-left: 13px;
+    }
+    
+ }
